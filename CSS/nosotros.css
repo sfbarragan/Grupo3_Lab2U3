@@ -1,0 +1,36 @@
+
+h2{
+    text-align: center;
+    color: rgb(148, 28, 28);  
+}
+
+h3{
+    color: rgb(165, 165, 165);  
+}
+
+p{
+    color: rgb(88, 89, 90);
+}
+
+#info{
+    width: 90%;
+    margin-top: 100px;
+    margin: 5%;
+    font-size: 20px;
+    text-align: center;
+    
+}
+th{
+    background-color: rgb(250, 181, 78);
+}
+.unidad{
+    box-shadow: 0 0 10px 0 #7a7a8b;
+    cursor: pointer;
+    transition: all 200ms;
+    padding: 80px;
+    font-size: 20px;
+    margin-bottom: 100px;
+    letter-spacing: 2px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
