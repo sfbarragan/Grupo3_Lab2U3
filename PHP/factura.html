@@ -4,13 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/factura.css">
+    <link rel="stylesheet" href="../CSS/menu.css">
+    <link rel="stylesheet" href="../CSS/piedepagina.css">
     <title>Facturación</title>
 </head>
 <body>
-
+    <nav>
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gestion.html">Gestión</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+        </ul>
+    </nav>
     <div class="contenedor">
         <div>
-            <form action="#" class="pago">
+            <form action="facturas.php" method="post" class="pago">
                 <table class="pagos">
                     <tr>
                         <td>
@@ -136,52 +145,58 @@
             <div class="metodos">
                 <h2>Métodos de Pago</h2>
                 <p>Aceptamos los siguientes métodos de Pago seguro: </p>
-                <img src="img/american-express.png" alt="american-express" width="100px">
-                <img src="img/discover.jpg" alt="discover"  width="100px">
-                <img src="img/mastercard.png" alt="mastercard"  width="100px">
-                <img src="img/paypal.png" alt="paypal"  width="100px">
-                <img src="img/visa.png" alt="visa"  width="100px">
+                <img src="../img/american-express.png" alt="american-express" width="100px">
+                <img src="../img/discover.jpg" alt="discover"  width="100px">
+                <img src="../img/mastercard.png" alt="mastercard"  width="100px">
+                <img src="../img/paypal.png" alt="paypal"  width="100px">
+                <img src="../img/visa.png" alt="visa"  width="100px">
             </div>
             
-            <div class="detalle">
-                <h2>Resumen de Factura</h2>
-                <table class="resumen">
-                    <tr>
-                        <td>
-                            <p><b>Subtotal</b> </p>
-                        </td>
-                        <td>
-                            <p id="sub">USD $1000,99</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p id="des">NVIDIA RTX 3090 GT</p>
-                        </td>
-                        <td>
-                            <p id="precio">USD $1000,99 </p>
-                        </td>
-                    </tr>  
-                    <tr>
-                        <td>
-                            <p> IVA 12%</p>
-                        </td>
-                        <td>
-                            <p id="iva">USD $120,11</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p><b>Total</b> </p>
-                        </td>
-                        <td>
-                            <p id="total"><b>USD $1121.10</b> </p>
-                        </td>
-                    </tr>
-                </table>
-            </div>
         </div>
-    </div>
+    </div>   
 
 </body>
+<footer class="main-footer">
+    <div class="container">
+      <div class="column column--50-25">
+        <h2 class="footer__title">Company</h2>
+        <p class="footer__txt"> «Cuando todo parece ir en contra de usted, recuerde que el avión despega en contra del viento, no con él.»</p>
+        <cite class="footer__author"> innovations...</cite>
+      </div>
+     
+      <div class="column column--50-25">
+        <h2 class="footer__title">Redes Sociales</h2>
+        <div class="footer__socials">
+          <div class="social-icon">
+            <i class="fab fa-facebook-f"></i>
+            <a class="social__link" href="">Facebook</a>
+          </div>
+          <div class="social-icon">
+            <i class="fab fa-twitter"></i>
+            <a class="social__link" href="">Twiter</a>
+          </div>
+          <div class="social-icon">
+            <i class="fab fa-pinterest"></i>
+            <a class="social__link" href="">Instagram</a>
+          </div>
+        </div>
+      </div>
+      <div class="column column--50-25">
+        <h2 class="footer__title">Contacto</h2>
+        <div class="contact-icon">
+          <i class="fas fa-map-marker-alt"></i>
+          <p class="contact__txt">New Tecnology</p>
+        </div>
+        <div class="contact-icon">
+          <i class="fas fa-phone-alt"></i>
+          <p class="contact__txt">02-2710145</p>
+        </div>
+        <div class="contact-icon">
+          <i class="fas fa-envelope"></i>
+          <p class="contact__txt">innovations@gmail.com.com</p>
+        </div>
+      </div>
+    </div>
+      <p class="copy">© 2021 Innovations COMPANY. All Rights Reserved | Design by <span class="color-span">innovations</span></p>
+  </footer>
 </html>

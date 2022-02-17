@@ -2,22 +2,24 @@ body{
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 h1{
-	color:#436db3;
+	color:#d94f5c;
 }
 
 
 h2{
-    color: #436db3;
+    color: #d94f5c;
 }
 .contenedor1{
     display: flex;
 }
-
+p{
+    color: rgb(145, 143, 143);
+}
 .pago{
     margin-left: 100px;
     width: 90%;
     margin-top: 50px;
-    box-shadow: 2px 2px 5px #436db3;
+    box-shadow: 2px 2px 5px #d94f5c;
     display: flex;
     margin-bottom: 100px;
 }
@@ -58,7 +60,7 @@ input{
 
 input[type="submit"]{
 	margin-bottom: 0;
-	background: #436db3;
+	background: #d94f5c;
 	color: #fff;
 	border: none;
     margin-left: 30%;
@@ -68,7 +70,7 @@ input[type="submit"]{
 }
 
 input[type="submit"]:hover{
-    background: #2e518b;
+    background: #e7283b;
 	cursor: pointer;
 }
 
@@ -83,7 +85,7 @@ input[type="submit"]:hover{
 
 .detalle{
     margin-top: 100px;
-    box-shadow: 2px 2px 5px #436db3;
+    box-shadow: 2px 2px 5px #d94f5c;
     padding-left: 30px;
     margin-left: 30px;
 }
