@@ -1,0 +1,93 @@
+body{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+h1{
+	color:#436db3;
+}
+
+
+h2{
+    color: #436db3;
+}
+.contenedor1{
+    display: flex;
+}
+
+.pago{
+    margin-left: 100px;
+    width: 90%;
+    margin-top: 50px;
+    box-shadow: 2px 2px 5px #436db3;
+    display: flex;
+    margin-bottom: 100px;
+}
+
+select{
+    margin-bottom: 30px;
+    width: 30%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+}
+
+.tarjeta, .pais{
+	width: 90%;
+}
+
+.pagos{
+    padding: 30px;
+}
+
+input{
+    margin-bottom: 30px;
+    width: 45%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+}
+
+.cod{
+    width: 30%;
+    margin-left: 15px;
+}
+
+.llenado{
+    width: 90%;
+    margin-right: 20px;
+}
+
+input[type="submit"]{
+	margin-bottom: 0;
+	background: #436db3;
+	color: #fff;
+	border: none;
+    margin-left: 30%;
+    margin-top: 20px;
+    width: 250px;
+    height: 40px;
+}
+
+input[type="submit"]:hover{
+    background: #2e518b;
+	cursor: pointer;
+}
+
+.contenedor{
+    display: flex;
+}
+
+.metodos{
+    margin-top: 100px;
+    margin-left: 30px;
+}
+
+.detalle{
+    margin-top: 100px;
+    box-shadow: 2px 2px 5px #436db3;
+    padding-left: 30px;
+    margin-left: 30px;
+}
+
+.resumen{
+    width: 100%;    
+}
