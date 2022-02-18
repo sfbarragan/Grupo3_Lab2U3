@@ -87,28 +87,28 @@
                         <td>
                             <p>Nombre &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                 Apellidos</p>
-                            <input type="text" placeholder="Nombre">
-                            <input type="text" placeholder="Apellidos">
+                            <input type="text" placeholder="Nombre" name="Nombre">
+                            <input type="text" placeholder="Apellidos" name="Apellido">
                         </td>
                         <td>
                             <p>Ciudad</p>
-                            <input type="text" placeholder="Ciudad" class="llenado" >
+                            <input type="text" placeholder="Ciudad" class="llenado" name="ciudad">
                         </td>
                     </tr>
                     <tr>
                         <td>
                             <p>Direccion de Facturación</p>
-                            <input type="email" placeholder="example@gmail.com" class="llenado">
+                            <input type="email" placeholder="example@gmail.com" class="llenado" name="correo1">
                         </td>
                         <td>
                             <p>Código Postal</p>
-                            <input type="text">
+                            <input type="text" name="codPos">
                         </td>
                     </tr>
                     <tr>
                         <td>
                             <p>Direccion de Facturación (segunda linea)</p>
-                            <input type="email" placeholder="example@gmail.com" class="llenado">
+                            <input type="email" placeholder="example@gmail.com" class="llenado" name="correo2">
                         </td>
                     </tr>   
                     <tr>
@@ -129,7 +129,7 @@
                         </td>
                         <td>
                             <p>Teléfono</p>
-                            <input type="number" class="llenado">
+                            <input type="number" class="llenado" name="telefono">
                         </td>
                     </tr>
                     <tr>
@@ -153,7 +153,89 @@
             </div>
             
         </div>
-    </div>   
+   </div>
+    <div class="detalle">
+                <h2>Resumen de Factura</h2>
+                <table class="resumen">
+                    <tr>
+                        <td>
+                            <p><b>Subtotal</b> </p>
+                        </td>
+                        <td>
+                            <p id="sub">USD $1000,99</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p id="des">NVIDIA RTX 3090 GT</p>
+                        </td>
+                        <td>
+                            <p id="precio">USD $1000,99 </p>
+                        </td>
+                    </tr>  
+                    <tr>
+                        <td>
+                            <p> IVA 12%</p>
+                        </td>
+                        <td>
+                            <p id="iva">USD $120,11</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><b>Total</b> </p>
+                        </td>
+                        <td>
+                            <p id="total"><b>USD $1121.10</b> </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        </div>   
+    <?php
+          $mPago=$_POST['metodo'];
+          $nTarjeta=$_POST['Tarjeta'];
+          $mCaducidad=$_POST['mes'];
+          $aCaducidad=$_POST['año'];
+          $cod=$_POST['cod'];
+          $nombre=$_POST['Nombre'];
+          $apellido=$_POST['Apellido'];
+          $ciudad=$_POST['ciudad'];
+          $correo1=$_POST['correo1'];
+          $cPostal=$_POST['codPos'];
+          $correo2=$_POST['correo2'];
+          $pais=$_POST['paises'];
+          $telefono=$_POST['telefono'];
+          
+          echo "<table class='cliente'>";
+          echo "<thead>";
+          echo "<th> Metodo Pago</th>";
+          echo "<th> Número Tarjeta</th>";
+          echo "<th> Fecha de Caducidad</th>";
+          echo "<th> Cliente</th>";
+          echo "<th> Ciudad</th>";
+          echo "<th> Correo</th>";
+          echo "<th> Cod. Postal</th>";
+          echo "<th> País</th>";
+          echo "<th> Teléfono</th>";
+          echo "</thead>";
+          echo "<tbody>";
+          echo "<tr class='fil'>";
+          echo "<td class='col'>",$mPago,"</td>";
+          echo "<td class='col'>",$nTarjeta,"</td>";
+          echo "<td class='col'>",$mCaducidad,"/", $aCaducidad,"</td>";
+          echo "<td class='col'>",$nombre, " ", $apellido,"</td>";
+          echo "<td class='col'>",$ciudad,"</td>";
+          echo "<td class='col'>",$correo1,"</td>";
+          echo "<td class='col'>",$cPostal, "</td>";
+          echo "<td class='col'>",$pais,"</td>";
+          echo "<td class='col'>",$telefono,"</td>";
+          echo "</tr>";
+          echo "</tbody>";
+          echo "</table>";
+         
+    ?>
 
 </body>
 <footer class="main-footer">
