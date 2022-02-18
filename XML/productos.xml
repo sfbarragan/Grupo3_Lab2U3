@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PRODUCTOS>
+    <producto>
+
+        <productoN>Laptop</productoN>
+        <nId>L0080 </nId>
+        <marca>Samasung</marca>
+        <precio> 200 </precio>
+
+    </producto>
+<producto><productoN>Laptop2</productoN><nId>LSAS</nId><marca>Samsung</marca><precio>3423</precio></producto><producto><productoN/><nId/><marca/><precio/></producto><producto><productoN>Laptop3</productoN><nId>L0920</nId><marca>Dell</marca><precio>2132</precio></producto></PRODUCTOS>
